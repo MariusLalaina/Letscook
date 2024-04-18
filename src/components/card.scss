@@ -1,0 +1,33 @@
+.content{
+    color: #424659;
+    font-size: 16px;
+    font-weight: 600;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width:271px;
+    height: 354px;
+}
+.stars{
+    display: flex;
+}
+.public{
+    color: white;
+    width: 58px;
+    height: 29px;
+    background-color: #3CCF17;
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+}
+.private{
+    color: white;
+    width: 58px;
+    height: 29px;
+    background-color: #F27830;
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+}

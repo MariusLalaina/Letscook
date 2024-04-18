@@ -1,0 +1,39 @@
+.sign_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 80vh;
+    justify-content: center;
+}
+.name{
+    display: flex;
+    gap: 10px;
+}
+.inp_name{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 142px;
+    outline: none;
+    border-color: #00000080;
+}
+.terms{
+    font-size: 12px;
+    cursor: pointer;    
+}
+.tolog {
+    font-size: 12px;
+}
+.tolog::after{
+    content: " Log in";
+    color: #3CCF17;
+    cursor: pointer;
+}
+.login{
+    display: flex;
+    justify-content: space-around;
+}
+.img_log{
+    width: 572px;
+    height: 800px;
+}

@@ -1,0 +1,160 @@
+$primary: #F27830;
+$secondary : #424659;
+
+.main_course {
+    display: flex;
+}
+
+.course_hero {
+    position: relative;
+    margin-top: 50px;
+    background-image: url("src/img/courses_hero.png");
+    height: 547px;
+}
+
+.courses_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 15%;
+    left: 63%;
+    gap: 20px;
+}
+
+.course_btn_hero {
+    width: 213px;
+    height: 53px;
+    color: white;
+    padding: 17px 32px 17px 32px;
+    gap: 10px;
+    border-radius: 30px;
+    border: none;
+    background-color: $primary;
+    cursor: pointer;
+}
+
+
+.course_first {
+    margin: 0;
+    padding: 0;
+    font-size: 60px;
+    font-weight: 600;
+    color: $primary;
+}
+
+.course_second {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: $secondary;
+    width: 484px;
+}
+
+.side_course {
+    margin: 50px 0 50px 77px;
+}
+
+.diary {
+    width: 149px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    background-color: rgba(216, 0, 39, 1);
+    border: none;
+    padding: 18px 32px 18px 32px;
+
+}
+
+.diary::after {
+    content: url("src/img/diary.png");
+}
+
+.filter_course {
+    font-size: 24px;
+    font-weight: 600;
+    color: $secondary;
+}
+
+.course_side_title {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title_course_side {
+    font-size: 16px;
+    font-weight: 600;
+    color: $primary;
+}
+
+.main_content_course {
+    margin: 70px 0 0 50px;
+}
+
+.course_creation_btn {
+    text-align: center;
+    color: white;
+    background-color: $primary;
+    border: none;
+    padding: 17px 32px 17px 32px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+
+}
+
+.main_course_title {
+    width: 911px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course_creation_btn::after {
+    content: url("src/img/add.png");
+}
+
+.sorting_course {
+    font-size: 14px;
+    font-weight: 500;
+    color: $secondary;
+    background-color: transparent;
+    width: 165px;
+    height: 51px;
+    padding: 17px 10px 17px 10px;
+    gap: 5px;
+    border: 1px solid $primary;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.sorting_course::after {
+    cursor: pointer;
+    content: url("src/img/chevron-down.png");
+}
+
+.cards_course {
+    margin: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;
+    gap: 20px;
+}
+
+.more_course {
+    color: white;
+    border: none;
+    width: 196px;
+    height: 53px;
+    padding: 17px 32px 17px 32px;
+    gap: 10px;
+    background-color: $primary;
+
+}

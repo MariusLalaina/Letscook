@@ -1,0 +1,32 @@
+$primary: #F27830;
+
+
+body{
+    font-family: "Work Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.google{
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    height: 36px;
+    border-radius: 30px;
+    padding: 0px 70px 0px 70px;
+    cursor: pointer;
+    background-color: white;
+    border-color: #00000080;
+}
+.google::before{
+    content: url(src/img/google.png);
+    margin-right: 10px;
+}
+
+.input{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 300px;
+    outline: none;
+    border-color: #00000080;
+}

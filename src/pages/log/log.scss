@@ -1,0 +1,30 @@
+.log_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 60vh;
+    justify-content: center;
+}
+.forget{
+    color: black;
+    font-size: 12px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.tosign {
+    font-size: 12px;
+}
+.tosign::after{
+    content: " Sign up";
+    color: #3CCF17;
+    cursor: pointer;
+}
+.login{
+    display: flex;
+    justify-content: space-around;
+}
+.img_log{
+    width: 572px;
+    height: 800px;
+}

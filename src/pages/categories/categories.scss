@@ -1,0 +1,39 @@
+$primary: #F27830;
+.cate_title{
+    color: $primary;
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 110px;
+}
+.search_filter{
+    margin: 40px 120px;
+    display: flex;
+    justify-content: space-between  ;
+}
+.btn_filter{
+    text-align: center;
+    color: $primary  ;
+    width: 112px;
+    height: 53px;
+    padding: 10px;
+    background-color: #FA792F4D;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+}
+.filter_input{
+    display: flex;
+    align-items: center;
+
+    .preference{
+        width: 30px;
+        height: 30px;
+    }
+}
+.circle_container{
+    margin: 75px 115px;
+}
+.circles{
+    display: flex;
+    gap: 20px;
+}

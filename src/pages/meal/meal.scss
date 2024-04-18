@@ -1,0 +1,98 @@
+$primary: #F27830;
+$secondary : #424659;
+.planner{
+    height: 1020px;
+    background-image: url("src/img/bg.jpg");
+}
+.meal_title{
+    margin: 10px 120px;
+    padding-top: 70px;
+    color: $primary;
+    font-size: 24px;
+    font-weight: 600;
+}
+.buttons{
+    display: flex;
+    gap: 10px;
+    margin: 25px 0 90px 100px;
+}
+.meal_cate{
+    color: $primary;
+    border: none;
+    border-radius: 30px;
+    padding: 20px 40px 20px 40px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+
+}
+.meal_text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 90px;
+    width: 1000px;
+    color: $secondary;
+}
+.clicked{
+    background-color: rgba(250, 121, 47, 0.3);
+    color: $primary;
+    border: none;
+    border-radius: 30px;
+    padding: 20px 40px 20px 40px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+.break_title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: $secondary;
+}
+.weekly{
+    color: $primary;
+    font-size: 18px;
+    font-weight: 600;
+}
+.week_plan{
+    margin: 0 200px;
+}
+.days{
+    display: flex;
+    gap: 40px;
+    width: 1000px;
+}
+.btn_planner{
+    margin: 40px 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.save{
+    text-align: center;
+    color: white  ;
+    width: 112px;
+    height: 53px;
+    padding: 10px;
+    background-color: #F27830;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    padding: 17px 32px 17px 32px;
+}
+.pdf{
+    text-align: center;
+    color: white  ;
+    width: auto;
+    height: 53px;
+    padding: 10px;
+    background-color: #F27830;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    padding: 17px 32px 17px 32px;
+    display: flex;
+    align-items: center;
+}
+.pdf::after{
+    content: url("src/img/download.png");
+}

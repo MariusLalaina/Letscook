@@ -1,0 +1,68 @@
+.Foot{
+    background-color: #E9E5E5;
+}
+.footer{
+    margin: 0 175px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 657px;
+    gap: 50px;
+}
+.up_social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social{
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+    align-items: center;
+}
+.social_title{
+    font-size: 18px;
+    font-weight: 600;
+}
+.social_network{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.ltr_input{
+    width: 360px;
+    height: 59px;
+    border-radius: 30px;
+    border: 2px solid #F27830;
+    padding: 0 15px;
+    outline: none;
+}
+.letter{
+    font-weight: 600;
+}
+.subscribe{
+    text-align: center;
+    color: white  ;
+    width: 112px;
+    height: 53px;
+    padding: 10px;
+    background-color: #F27830;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+}
+.subscribing{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer_lists{
+    display: flex;
+    gap: 10px   ;
+}
+.foot{
+    width: 217px;
+}
+.foot_list{
+    font-weight: 600;
+}
