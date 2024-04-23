@@ -16,11 +16,11 @@ export const logAction = async ({ request }) => {
     const token = localStorage.setItem("token", login.data.token);
     const refresh = localStorage.setItem("refresh", login.data.refreshToken);
     const id = localStorage.setItem("id", login.data.user._id);
-    console.log(login.status);
+    // console.log(login.status);
   } catch (error) {
-    console.error("Diso daholo");
+    console.error(error.message); 
   }
-  return null;
+  return redirect ("/categorie");
 };
 
 function Log() {

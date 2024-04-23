@@ -1,0 +1,76 @@
+.title_course_creation {
+  display: flex;
+  align-items: center;
+  margin-left: 154px;
+
+  .course_creation_title {
+    color: #f27830;
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
+.main_create{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.main_creation_course {
+  margin: 0 230px;
+  display: flex;
+  gap: 60px;
+
+  .creation_title {
+    color: #00000080;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .input_creation {
+    border-radius: 5px;
+    padding: 17px 10px 17px 10px;
+    width: 400px;
+    border-color: #f2783080;
+    outline: none;
+  }
+  .input_creation_select {
+    border-radius: 5px;
+    padding: 17px 10px 17px 10px;
+    width: 400px;
+    border-color: #f2783080;
+    outline: none;
+  }
+  .input_creation_area{
+    border-radius: 5px;
+    padding: 17px 10px 17px 10px;
+    width: 400px;
+    height: 50px;
+    border-color: #f2783080;
+    outline: none;
+  }
+}
+.btn_creation_bottom {
+  display: flex;
+  gap: 10px;
+  margin: 10px ;
+  .publish_course {
+    width: 123px;
+    height: 53px;
+    padding: 17px 32px 17px 32px;
+    gap: 10px;
+    border: none;
+    border-radius: 30px;
+    background-color: #f27830;
+    color: white;
+  }
+  .cancel_course {
+    width: 118px;
+    height: 53px;
+    padding: 17px 32px 17px 32px;
+    gap: 10px;
+    border-radius: 30px;
+    border: none;
+    background-color: #FFFFFF;
+    color: #f27830;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+}

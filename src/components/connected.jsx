@@ -40,7 +40,9 @@ function Connected({ classname }) {
           <Button classname={"icon"} />
           <Input classnames={"search_inp"} placeholder={"Search"} />
         </div>
+        <NavLink to={"/profil"}>
         <img className="user" src="src/img/Frame.png" alt="Connected" />
+        </NavLink>
         <img className="notif" src="src/img/Frame (2).png" alt="Notification" />
         <Button classname={"sign"} text={"Log out"} onclick={logOut}/>
       </div>

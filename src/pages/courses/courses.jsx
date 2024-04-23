@@ -4,6 +4,7 @@ import {Text} from "../../components/Text"
 import {Button} from "../../components/button"
 import Card from "../../components/card"
 import Footer from "../../components/footer"
+import { Link } from 'react-router-dom'
 
 
 function Courses() {
@@ -43,7 +44,9 @@ function Courses() {
         </div>{/* side_course */}
         <div className='main_content_course'>
             <div className="main_course_title">
+              <Link to={"/editCourse"} className='course_creation_btn_link'>
               <Button text={"Course creation"} classname={"course_creation_btn"}/>
+              </Link>
               <Button text={"Sort by : Featured"} classname={"sorting_course"}/>
             </div>{/* main_course_title */}
             <div className="cards_course">

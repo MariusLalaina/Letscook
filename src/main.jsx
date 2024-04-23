@@ -24,6 +24,8 @@ import Admin from './pages/admin/Admin.jsx'
 import AdminCard from './components/adminCard.jsx'
 import Edit from './pages/admin/Edit.jsx'
 import ErrorElement from './ErrorElement.jsx'
+import CreateCourse from './pages/courses/createCourse.jsx'
+import Profil from './pages/profil/profil.jsx'
 
 
   const router = createBrowserRouter([
@@ -53,7 +55,10 @@ import ErrorElement from './ErrorElement.jsx'
       path:"courses",
       element:<Courses/>
     },
-    
+    {
+      path:"editCourse",
+      element:<CreateCourse/>
+    },
     {
       path:"root",
       element:<Root/>,
@@ -89,6 +94,10 @@ import ErrorElement from './ErrorElement.jsx'
     {
     path:"lunch",
     element:<Lunch/>  
+    },
+    {
+      path:"profil",
+      element:<Profil/>
     },
     
   ]

@@ -1,0 +1,44 @@
+.profil_pg {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.myprofil {
+  font-size: 14px;
+  font-weight: 600;
+  color: #424659;
+}
+.menus_profil {
+  display: flex;
+  flex-direction: column;
+}
+.profil_informations {
+  text-align: center;
+  color: #424659;
+  font-size: 14px;
+  font-weight: 400;
+}
+.profil_menu_title {
+  margin-left: 200px;
+  color: #424659;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+.profil_menu {
+  margin-left: 200px;
+  color: #000000cc;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.profil_menus {
+  display: none;
+  margin-left: 200px;
+}
+.profil_menus_active {
+  display: flex;
+  flex-direction: column;
+}

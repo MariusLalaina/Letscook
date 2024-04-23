@@ -3,6 +3,7 @@ import "./home.scss";
 import { Text } from "../../components/Text";
 import { Button, Outline } from "../../components/button";
 import { NavLink } from "react-router-dom";
+import Connected from "../../components/connected"
 import Card from "../../components/card";
 import Link from "../../components/link";
 import Elipse from "../../components/elipse";
@@ -14,7 +15,7 @@ import Navbar from "../../components/navbar";
 function Home() {
   return (
     <>
-    <Navbar/> 
+     {localStorage.getItem("token") ?<Connected/> : <Navbar/>} 
       <div className="hero">
         <img src="src/img/hero.jpg" alt="Hero" />
         <div className="card_hero">

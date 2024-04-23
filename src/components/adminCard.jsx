@@ -1,12 +1,15 @@
 import React from 'react'
 import './adminCard.scss'
 import { Text } from './Text'
+import { NavLink } from 'react-router-dom'
 
 function AdminCard({url, username, email, phone }) {
     return (
         <div>
             <div className="admincard">
+                <NavLink to={"/edit"} className='more'>
                 <img src="src/img/more.png" alt=""className='more'/>
+                </NavLink>
                 <img src={url} alt="img" className='avatar'/>
                 <Text as={"p"} content={username} classnames={"username"}/>
                 <div className="user_infos">
