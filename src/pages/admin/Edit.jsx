@@ -3,6 +3,7 @@ import './edit.scss'
 import { Text } from "../../components/Text";
 import Search from "../../components/search";
 import { Button } from "../../components/button";
+import { ClimbingBoxLoader, ClipLoader, ClockLoader, PacmanLoader, PulseLoader } from "react-spinners";
 
 
 function Edit() {
@@ -84,7 +85,7 @@ function Edit() {
               <Text as={"p"} content={"Allergic alert"} classnames={"alergic_alert"} />
             </div>
             <div className='profil_connected'>
-              <img src="src/img/profil.png" alt="" />
+              <img className="admin_profil_avatar" src="src/img/profil.png" alt="" />
               <div className='info_profil_connected'>
                 <Text as={"p"} content={"John Doe"} classnames={"username_profil"} />
                 <Text as={"p"} content={"Super Admin"} classnames={"profil_post"} />
@@ -184,6 +185,13 @@ function Edit() {
             <div className="profil_courses">
                 <div className="menu_profil_courses">
                 <Text as={"p"} content={"John Course"}/>
+
+                <ClipLoader loading={false}/>
+                <PacmanLoader loading={false}/>
+                <PulseLoader loading={false}/>
+                <ClockLoader loading={false}/>
+                <ClimbingBoxLoader loading={false}/>
+                
                 <div className="user_course_display_edit">
                   <img src="src/img/miniature.png" alt="" />
                   <img src="src/img/preference.png" alt="" />

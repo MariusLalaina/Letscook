@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navlink from "../../components/link"
 import Search from "../../components/search"
 import './admin.scss'
@@ -6,8 +6,31 @@ import { Text } from '../../components/Text'
 import { Button } from '../../components/button'
 import Card from '../../components/card'
 import AdminCard from '../../components/adminCard'
+import { UserService } from '../../services/userService'
+import { useLoaderData } from 'react-router-dom'
+
+export const adminLoader = async () => {
+  let res = null 
+  try {
+    const admin = await UserService.getUser();
+    res = admin.data.data
+  } catch (error) {
+    console.error(error.message); 
+  }
+  return res;
+};
 
 function Admin() {
+  const user = useLoaderData()
+ 
+  let userMap = () =>{   
+    let users = null
+        for (let i=0; i<user.length; i++){
+          users = user[i]
+          
+      }      
+    return null
+  }
   return (
     <>
       <div className="nav_side_bar">
@@ -86,7 +109,7 @@ function Admin() {
               <Text as={"p"} content={"Allergic alert"} classnames={"alergic_alert"} />
             </div>
             <div className='profil_connected'>
-              <img src="src/img/profil.png" alt="" />
+              <img src="src/img/profil.png" className='nav_avatar' alt="" />
               <div className='info_profil_connected'>
                 <Text as={"p"} content={"John Doe"} classnames={"username_profil"} />
                 <Text as={"p"} content={"Super Admin"} classnames={"profil_post"} />
@@ -110,7 +133,15 @@ function Admin() {
                   <Button classname={"adding_user"} text={"New Users"} />
                 </div>{/* user_managment_search_filter */}
               </div>{/* user_managment_filter */}
-            <AdminCard url={"src/img/profil.png"} username={"John Doe"} email={"doejohn47@gmail.com"} phone={"+852 456 963"} />
+              <div className='all_users_render'>
+          {
+            user.map((user) => (
+          <li key={user.id || user._id || Math.random().toString(36)} className='user_card_map'>
+                <AdminCard url={user.avatar} username={user.username} email={user.email} />
+              </li>
+            ))
+          }       
+              </div>
             </div>{/* all_user_managment */}
           </div>{/* admin_container */}
         </div>{/* main_admin */}

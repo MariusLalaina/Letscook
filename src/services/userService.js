@@ -33,4 +33,12 @@ export class UserService extends Http{
             console.log(error.message);
         }
     }
+    static async postAvatar(data){
+        try {
+            const res = await this.post("image" ,data)
+            return res;
+        } catch (error){
+            console.log(error.message);
+        }
+    }
 }

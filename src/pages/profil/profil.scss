@@ -1,3 +1,8 @@
+.profil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .profil_pg {
   margin-top: 50px;
   display: flex;
@@ -10,8 +15,10 @@
   color: #424659;
 }
 .menus_profil {
+  align-self: flex-start;
   display: flex;
   flex-direction: column;
+  margin: 50px;
 }
 .profil_informations {
   text-align: center;
@@ -20,7 +27,7 @@
   font-weight: 400;
 }
 .profil_menu_title {
-  margin-left: 200px;
+  margin-left: 150px;
   color: #424659;
   display: flex;
   align-items: center;
@@ -28,17 +35,132 @@
   font-weight: 600;
 }
 .profil_menu {
-  margin-left: 200px;
+  padding: 10px;
   color: #000000cc;
   font-size: 18px;
   font-weight: 600;
+
 }
 
 .profil_menus {
   display: none;
-  margin-left: 200px;
 }
 .profil_menus_active {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+}
+.menu_profil {
+  background-color: #F9F9F9;
+  margin-left: 150px;
+  width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.men_profil{
+  text-decoration: none;
+}
+.cookie_setting {
+  width: 960px;
+  height: auto;
+  margin: 50px;
+  .cookie {
+    color: #424659;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .cookies {
+    color: #f27830;
+  }
+}
+.cookie_btn {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.cookie_account_delete {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: #f27830;
+  background-color: #ffffff;
+  border: none;
+  width: 212px;
+  height: 53px;
+  padding: 17px 32px 17px 32px;
+  gap: 10px;
+  border-radius: 30px;
+}
+.setting_cookie {
+  text-decoration-color: #424659;
+  text-decoration: underline;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  color: #424659;
+  font-size: 16px;
+  font-weight: 600;
+}
+.menu_active{
+  display: flex;
+  align-items: center;
+  color: #f27830;
+
+}
+.menu_active::before{
+  content: url(src/img/ChevronDown.png);
+} 
+.menu_disable{
+  display: flex;
+  align-content: center;
+}
+.menu_disable::before{
+  content: url(src/img/ChevronRight.png);
+} 
+.profil_avatar{
+  width: 200px;
+  height: 200px;
+  object-fit: fill;
+}
+.post_avatar{
+  width: 100px;
+  padding: 17px 32px 17px 32px;
+  background-color: #f27830;
+  border: none;
+  border-radius: 30px;
+}
+.hidden{
+  display: none;
+}
+.culinary_main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.culinary{
+  display: flex;
+  width: 70vw;
+  justify-content: space-between;
+}
+.culinary_left{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.culinary_right{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.title_culinary{
+  align-self: flex-start;
+  font-size: 14px;
+  font-weight: 600;
+  color: #f27830;
+}
+.culinary_title{
+  color: #424659;  
 }

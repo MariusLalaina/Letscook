@@ -1,7 +1,11 @@
 .nav_side_bar {
     display: flex;
 }
-
+.nav_avatar{
+    width: 50px;
+    height: 50px;
+    object-fit: fill;
+}
 .navbar {
     border: none;
     z-index: 2;
@@ -121,4 +125,11 @@
 }
 .all_user_managment{
     margin-left: 50px;
+}
+.user_card_map{
+    list-style-type: none;
+}
+.all_users_render{
+    display: flex;
+    gap: 15px;
 }

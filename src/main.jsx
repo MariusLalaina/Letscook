@@ -20,12 +20,15 @@ import Breakfast from './pages/meal/breakfast.jsx'
 import Dinner from './pages/meal/dinner.jsx'
 import Lunch from './pages/meal/lunch.jsx'
 import Snack from './pages/meal/snack.jsx'
-import Admin from './pages/admin/Admin.jsx'
+import Admin, { adminLoader } from './pages/admin/Admin.jsx'
 import AdminCard from './components/adminCard.jsx'
 import Edit from './pages/admin/Edit.jsx'
 import ErrorElement from './ErrorElement.jsx'
 import CreateCourse from './pages/courses/createCourse.jsx'
 import Profil from './pages/profil/profil.jsx'
+import PersoInfo, { infoAction } from './pages/profil/personalInfo.jsx'
+import CulinarPref from './pages/profil/culinaryPref.jsx'
+import Recipe from './pages/profil/recipe.jsx'
 
 
   const router = createBrowserRouter([
@@ -97,7 +100,20 @@ import Profil from './pages/profil/profil.jsx'
     },
     {
       path:"profil",
-      element:<Profil/>
+      element:<Profil/>,
+      children:[{
+        path:"personalInfo",
+        element:<PersoInfo/>,
+        action:infoAction,
+      },
+      {
+        path:"culinaryPref",
+        element:<CulinarPref/>
+      },
+      {
+        path:"recipe",
+        element:<Recipe/>
+      },]
     },
     
   ]
@@ -105,6 +121,7 @@ import Profil from './pages/profil/profil.jsx'
   {
     path:"/admin",
     element:<Admin/>,
+    loader:adminLoader,
   },
   {
     path:"/edit",

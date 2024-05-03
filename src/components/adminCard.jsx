@@ -17,10 +17,10 @@ function AdminCard({url, username, email, phone }) {
                         <img src="src/img/email.png" alt="" />
                         <p className="user_email">{email}</p>
                     </div>
-                    <div className="phone">
+                    {/* <div className="phone">
                         <img src="src/img/contact.png" alt="" />
                         <p className="user_phone">{phone}</p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

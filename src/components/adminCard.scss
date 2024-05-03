@@ -1,5 +1,5 @@
 .admincard {
-  width: fit-content;
+  width: 200px;
   height: auto;
   padding: 15px;
   border-radius: 30px;
@@ -18,6 +18,13 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  width: 200px;
+  
+}
+.user_email{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; 
 }
 .phone {
   gap: 10px;
